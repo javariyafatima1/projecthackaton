@@ -1,19 +1,15 @@
 const express = require('express')
-const mongoose = require('mongoose')
+// const mongoose = require('mongoose')
 const todoRoutes = require('./routes/Todo.js')
 const userRoutes = require('./routes/User.js')
 const cors =  require('cors')
-const dbconnect = require('./db.js')
-
-
-require('dotenv').config({ path: '.env' })
-
-
+// const dbconnect = require('./db.js')
+// require('dotenv').config({ path: '.env' })
 const app = express()
-const PORT = process.env.port || 5000
+const PORT = 5000
 app.use(express.json())
 app.use(cors())
-dbconnect()
+// dbconnect()
 app.use(todoRoutes)
 app.use("/user", userRoutes)
 
