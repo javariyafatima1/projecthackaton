@@ -15,3 +15,4 @@ app.use("/user", userRoutes)
 
 app.get("/test", (req, res) => res.send("todo server is running on vercel"))
 app.listen(PORT, () => console.log(`Server is Running on: ${PORT} `))
+
