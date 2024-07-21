@@ -1,3 +1,4 @@
+import react from 'react';
 import { useState } from "react";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
   
   return (
     <>
-  <h2>My name is javariya </h2>
+  <h2>My name is Maryam </h2>
     </>
         
         
